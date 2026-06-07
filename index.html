@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KENNY // Sadboy Skena Portfolio</title>
+    <title>KENNY HARRIS</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome for Cool, Streetwear, Skate & Retro Icons -->
@@ -79,18 +79,6 @@
             mix-blend-mode: luminosity;
         }
 
-        /* Draggable sticker styling */
-        .slapped-sticker {
-            position: absolute;
-            cursor: move;
-            user-select: none;
-            z-index: 50;
-            transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-        .slapped-sticker:active {
-            transform: scale(1.1) rotate(10deg);
-        }
-
         /* Custom scrollbar to match the style */
         ::-webkit-scrollbar {
             width: 12px;
@@ -107,18 +95,13 @@
 </head>
 <body class="photocopy-grunge text-gray-300 min-h-screen relative overflow-x-hidden selection:bg-grunge-accent selection:text-grunge-dark font-sans pb-16">
 
-    <!-- Sticker Bomb Canvas overlay -->
-    <div id="stickerBoard" class="absolute inset-0 pointer-events-none z-40">
-        <!-- Interactive guest and uploaded custom stickers will pop up here dynamically when clicked -->
-    </div>
-
     <!-- MAIN PORTFOLIO WRAPPER -->
     <div class="max-w-5xl mx-auto px-4 py-8 md:py-16 relative z-10">
         
         <!-- HEADER: BAND-POSTER STYLE TITLE -->
         <header class="mb-12 relative">
             <!-- Vintage Cardboard Label -->
-            <div class="absolute -top-7 left-6 w-36 h-9 duct-tape text-[11px] text-gray-300 font-mono flex items-center justify-center opacity-90 uppercase tracking-widest select-none font-bold">VOL. 01 // SAD BOY COLD DAYS</div>
+            <div class="absolute -top-7 left-6 w-36 h-9 duct-tape text-[11px] text-gray-300 font-mono flex items-center justify-center opacity-90 uppercase tracking-widest select-none font-bold">fz-kn.</div>
 
             <!-- Main Banner Box -->
             <div class="bg-grunge-paper zine-border p-6 md:p-10 transform -rotate-1 relative overflow-hidden">
@@ -130,19 +113,19 @@
                     <div>
                         <div class="flex items-center gap-2 mb-2">
                             <span class="inline-block w-3.5 h-3.5 bg-grunge-accent rounded-none"></span>
-                            <span class="font-typewriter text-xs text-grunge-accent font-bold tracking-widest uppercase">2 AM OVERTHINKING HOURS &bull; NO. 101</span>
+                            <span class="font-typewriter text-xs text-grunge-accent font-bold tracking-widest uppercase">2 AM &bull; SINCE 2009</span>
                         </div>
                         <h1 class="font-bungee text-4xl sm:text-5xl md:text-6xl text-white leading-none tracking-tight">
-                            KENNY // <span class="text-grunge-accent">ZINE</span>
+                            NTMY, <span class="text-grunge-accent">I'M KEN.</span>
                         </h1>
-                        <span class="font-typewriter text-sm sm:text-base text-gray-400 block mt-2">A moody, quiet space for an introvert who knows he's the main character.</span>
+                        <span class="font-typewriter text-sm sm:text-base text-gray-400 block mt-2">Good Riddance.</span>
                     </div>
 
                     <!-- Ambient Basement Drone Sound Controller -->
                     <div class="w-full md:w-auto">
                         <button id="songBtn" onclick="toggleSong()" class="w-full md:w-auto px-5 py-3 bg-grunge-dark text-grunge-accent text-xs hover:bg-grunge-accent hover:text-grunge-dark transition-all font-bold font-typewriter zine-border flex items-center justify-center gap-2">
                             <i id="songIcon" class="fa-solid fa-compact-disc"></i>
-                            <span id="songText">PLAY "DENTING" // MP3</span>
+                            <span id="songText">PLAY "DENTING"</span>
                         </button>
                     </div>
                 </div>
@@ -152,7 +135,7 @@
         <!-- TWO COLUMN LAYOUT GRID -->
         <main class="grid grid-cols-1 lg:grid-cols-12 gap-8">
             
-            <!-- LEFT COLUMN: POLAROID, STICKER GENERATOR, AND MANIFESTO -->
+            <!-- LEFT COLUMN: POLAROID, STATIC STICKER SHEET, AND MANIFESTO -->
             <section class="lg:col-span-5 flex flex-col gap-8">
                 
                 <!-- Vintage Polaroid Box -->
@@ -164,263 +147,103 @@
                     <div class="relative bg-stone-950 w-3/4 mx-auto aspect-square overflow-hidden border-4 border-grunge-dark shadow-inner">
                         <img id="polaroidImg" class="w-full h-full object-cover xerox-mono" 
                              src="KEONHO.jpg" 
-                             onerror="this.onerror=null; this.src='https://placehold.co/600x600/2a2a2a/ffffff?text=KEONHO.jpg'"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x600/333333/ffffff?text=KENNY+HARRIS'"
                              alt="Kenny Harris Portrait">
                         
                         <!-- Overlay Tag -->
                         <div class="absolute bottom-3 right-3 bg-grunge-accent text-grunge-dark text-[10px] font-mono px-2 py-0.5 font-bold uppercase rotate-3">
-                            MIDNIGHT-01
+                            #1 
                         </div>
                     </div>
 
                     <!-- Identity Card Details (Casual Version) -->
                     <div class="mt-6 font-typewriter px-4">
                         <div class="border-b-2 border-dashed border-stone-800 pb-1 mb-2">
-                            <span class="text-[10px] text-gray-400 font-bold uppercase tracking-wider">ABOUT ME //</span>
+                            <span class="text-[10px] text-gray-400 font-bold uppercase tracking-wider">ABOUT ME: </span>
                         </div>
                         <h2 class="text-2xl font-black uppercase tracking-tight text-white text-center">KENNY HARRIS</h2>
 
                         <div class="space-y-2 text-xs text-gray-400 mt-4 leading-none">
                             <div class="flex justify-between border-b border-stone-800 pb-1">
-                                <span class="font-bold text-gray-500">MY VIBE:</span>
-                                <span class="font-bold text-grunge-accent">INTROVERT + VERY CONFIDENT</span>
+                                <span class="font-bold text-gray-500">VIBE:</span>
+                                <span class="font-bold text-grunge-accent">VERY CONFIDENT</span>
                             </div>
                             <div class="flex justify-between border-b border-stone-800 pb-1">
                                 <span class="font-bold text-gray-500">LOCATION:</span>
-                                <span class="font-mono text-white">JAKARTA // SKENA AREA</span>
+                                <span class="font-mono text-white">UNKNOWN</span>
                             </div>
                             <div class="flex justify-between">
                                 <span class="font-bold text-gray-500">CURRENTLY:</span>
-                                <span class="font-bold text-grunge-accentSoft">LISTENING TO HINDIA & READING MANHWA</span>
+                                <span class="font-bold text-grunge-accentSoft">BREATHING</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Interactive Visitor Sticker Slapper -->
+                <!-- Static Sticker Album (Passive Showcase Only) -->
                 <div class="bg-grunge-paper border-4 border-grunge-dark p-5 transform -rotate-1 relative zine-border">
-                    <div class="absolute -top-4 right-4 bg-grunge-accent text-grunge-dark text-[10px] font-bold px-3 py-1 uppercase tracking-widest rotate-2">STICKER BOMB</div>
-                    <h3 class="font-typewriter text-sm font-bold text-white uppercase mb-2">STICKER BOARD</h3>
+                    <div class="absolute -top-4 right-4 bg-grunge-accent text-grunge-dark text-[10px] font-bold px-3 py-1 uppercase tracking-widest rotate-2">ME ARCHIVE</div>
+                    <h3 class="font-typewriter text-sm font-bold text-white uppercase mb-2">MY PACK</h3>
                     <p class="text-[11px] text-gray-400 mb-4 leading-relaxed font-mono">
-                        Click any sticker below to slap it onto my zine and drag it around! These are my official collection—you can't change or replace them.
+                        Ampun Bang
                     </p>
 
-                    <!-- KENNY'S OFFICIAL PHOTO STICKERS (Change the image sources in the code below!) -->
-                    <div class="mb-4 p-3 bg-grunge-bg border-2 border-grunge-dark rounded-md">
-                        <span class="block text-[10px] font-bold text-gray-400 uppercase font-mono mb-2 text-center">
-                            <i class="fa-solid fa-heart-crack text-grunge-accent mr-1"></i> KENNY'S OFFICIAL STICKERS
+                    <!-- KENNY'S OFFICIAL PHOTO STICKERS -->
+                    <div class="p-3 bg-grunge-bg border-2 border-grunge-dark rounded-md">
+                        <span class="block text-[10px] font-bold text-gray-400 uppercase font-mono mb-3 text-center">
+                            <i></i> CURRENTLY FACE
                         </span>
-                        <div class="grid grid-cols-3 gap-2">
-                            <!-- SLOT 1 -->
-                            <button onclick="slapCustomImageSticker('https://placehold.co/150x150/111111/ffffff?text=STK+1')" class="border-2 border-grunge-dark p-1 bg-grunge-paper hover:bg-grunge-cardboard transition-all aspect-square flex items-center justify-center shadow-[2px_2px_0px_rgba(0,0,0,1)]">
-                                <img src="https://placehold.co/150x150/111111/ffffff?text=STK+1" class="max-h-full max-w-full object-contain pointer-events-none" alt="Sticker 1">
-                            </button>
-                            <!-- SLOT 2 -->
-                            <button onclick="slapCustomImageSticker('https://placehold.co/150x150/479f9f/ffffff?text=STK+2')" class="border-2 border-grunge-dark p-1 bg-grunge-paper hover:bg-grunge-cardboard transition-all aspect-square flex items-center justify-center shadow-[2px_2px_0px_rgba(0,0,0,1)]">
-                                <img src="https://placehold.co/150x150/479f9f/ffffff?text=STK+2" class="max-h-full max-w-full object-contain pointer-events-none" alt="Sticker 2">
-                            </button>
-                            <!-- SLOT 3 -->
-                            <button onclick="slapCustomImageSticker('https://placehold.co/150x150/2e1f3c/ffffff?text=STK+3')" class="border-2 border-grunge-dark p-1 bg-grunge-paper hover:bg-grunge-cardboard transition-all aspect-square flex items-center justify-center shadow-[2px_2px_0px_rgba(0,0,0,1)]">
-                                <img src="https://placehold.co/150x150/2e1f3c/ffffff?text=STK+3" class="max-h-full max-w-full object-contain pointer-events-none" alt="Sticker 3">
-                            </button>
-                            <!-- SLOT 4 -->
-                            <button onclick="slapCustomImageSticker('https://placehold.co/150x150/444444/ffffff?text=STK+4')" class="border-2 border-grunge-dark p-1 bg-grunge-paper hover:bg-grunge-cardboard transition-all aspect-square flex items-center justify-center shadow-[2px_2px_0px_rgba(0,0,0,1)]">
-                                <img src="https://placehold.co/150x150/444444/ffffff?text=STK+4" class="max-h-full max-w-full object-contain pointer-events-none" alt="Sticker 4">
-                            </button>
-                            <!-- SLOT 5 -->
-                            <button onclick="slapCustomImageSticker('https://placehold.co/150x150/666666/ffffff?text=STK+5')" class="border-2 border-grunge-dark p-1 bg-grunge-paper hover:bg-grunge-cardboard transition-all aspect-square flex items-center justify-center shadow-[2px_2px_0px_rgba(0,0,0,1)]">
-                                <img src="https://placehold.co/150x150/666666/ffffff?text=STK+5" class="max-h-full max-w-full object-contain pointer-events-none" alt="Sticker 5">
-                            </button>
-                            <!-- SLOT 6 -->
-                            <button onclick="slapCustomImageSticker('https://placehold.co/150x150/888888/ffffff?text=STK+6')" class="border-2 border-grunge-dark p-1 bg-grunge-paper hover:bg-grunge-cardboard transition-all aspect-square flex items-center justify-center shadow-[2px_2px_0px_rgba(0,0,0,1)]">
-                                <img src="https://placehold.co/150x150/888888/ffffff?text=STK+6" class="max-h-full max-w-full object-contain pointer-events-none" alt="Sticker 6">
-                            </button>
+                        <div class="grid grid-cols-3 gap-3">
+                          <img src="sticker1.jpg" class="max-h-full max-w-full object-contain pointer-events-none select-none">
+                            <img src="sticker2.jpg" class="max-h-full max-w-full object-contain pointer-events-none select-none">
+                            <img src="sticker3.jpg" class="max-h-full max-w-full object-contain pointer-events-none select-none">
+                            <img src="sticker4.jpg" class="max-h-full max-w-full object-contain pointer-events-none select-none">
+                            <img src="sticker5.jpg" class="max-h-full max-w-full object-contain pointer-events-none select-none">
+                            <img src="sticker6.jpg" class="max-h-full max-w-full object-contain pointer-events-none select-none">
                         </div>
                     </div>
 
-                    <!-- Clickable Default Sticker Options -->
-                    <div class="flex flex-wrap gap-2">
-                        <button onclick="slapSticker('fa-solid fa-face-frown-open', 'bg-grunge-accent text-grunge-dark border-2 border-black')" class="px-2.5 py-2 bg-grunge-cardboard text-xs hover:bg-grunge-accent hover:text-grunge-dark font-mono font-bold transition-all border border-stone-800">🥺 SAD</button>
-                        <button onclick="slapSticker('fa-solid fa-cloud-showers-water', 'bg-blue-900 text-white border-2 border-black')" class="px-2.5 py-2 bg-grunge-cardboard text-xs hover:bg-grunge-accent hover:text-grunge-dark font-mono font-bold transition-all border border-stone-800">🌧️ RAIN</button>
-                        <button onclick="slapSticker('fa-solid fa-record-vinyl', 'bg-black text-grunge-accent border-2 border-grunge-accent')" class="px-2.5 py-2 bg-grunge-cardboard text-xs hover:bg-grunge-accent hover:text-grunge-dark font-mono font-bold transition-all border border-stone-800">🎵 VINYL</button>
-                        <button onclick="slapSticker('fa-solid fa-moon', 'bg-indigo-950 text-yellow-300 border-2 border-black')" class="px-2.5 py-2 bg-grunge-cardboard text-xs hover:bg-grunge-accent hover:text-grunge-dark font-mono font-bold transition-all border border-stone-800">🌙 MOON</button>
-                        <button onclick="slapSticker('fa-solid fa-book-open', 'bg-purple-950 text-grunge-accent border-2 border-black')" class="px-2.5 py-2 bg-grunge-cardboard text-xs hover:bg-grunge-accent hover:text-grunge-dark font-mono font-bold transition-all border border-stone-800">📖 WEBTOON</button>
-                        <button onclick="slapTextSticker('NARCISSIST', 'bg-grunge-accentSoft text-white border-2 border-black font-bungee')" class="px-2.5 py-2 bg-grunge-cardboard text-[10px] hover:bg-grunge-accent hover:text-grunge-dark font-mono font-bold transition-all border border-stone-800">Ⓐ NARCISSIST</button>
-                        <button onclick="slapTextSticker('KENNY', 'bg-grunge-dark text-grunge-accent border-2 border-grunge-accent')" class="px-2.5 py-2 bg-grunge-cardboard text-[10px] hover:bg-grunge-accent hover:text-grunge-dark font-mono font-bold transition-all border border-stone-800">"KENNY"</button>
+                    <!-- Casual Static Badges -->
+                    <div class="flex flex-wrap gap-2 justify-center opacity-85 mt-2">
+                        <span class="px-2.5 py-1 bg-grunge-cardboard text-[10px] font-mono text-grunge-accent border border-black">#MENARIK</span>
+                        <span class="px-2.5 py-1 bg-grunge-cardboard text-[10px] font-mono text-blue-400 border border-black">#GANTENG</span>
+                        <span class="px-2.5 py-1 bg-grunge-cardboard text-[10px] font-mono text-purple-400 border border-black">#PACARANAH2H</span>
+                        <span class="px-2.5 py-1 bg-grunge-cardboard text-[10px] font-mono text-yellow-300 border border-black">#COOL</span>
                     </div>
                 </div>
 
                 <!-- Raw Unfiltered Manifesto Statement -->
                 <div class="bg-grunge-cardboard border-4 border-grunge-dark p-6 transform rotate-1 relative zine-border-accent">
                     <div class="absolute -top-4 left-4 bg-grunge-accent text-grunge-dark text-[10px] font-bold px-2 py-0.5 uppercase tracking-wider -rotate-2">MY RULE</div>
-                    <span class="font-typewriter text-xs text-gray-400 uppercase block mb-2"><i class="fa-solid fa-quote-left"></i> THE MAIN CHARACTER:</span>
+                    <span class="font-typewriter text-xs text-gray-400 uppercase block mb-2"><i class="fa-solid fa-quote-left"></i> quotes of the day</span>
                     <p class="font-typewriter text-sm leading-relaxed italic text-white font-semibold">
-                        "I'm quiet, but let's be real—I'm still the main character. Catch me listening to Hindia, reading top-tier manhwa, and waiting for the next Boruto chapter."
+                        "Mantap."
                     </p>
                 </div>
 
             </section>
 
-            <!-- RIGHT COLUMN: STATS AND STARTER PACK EQUIPMENT GRID -->
+            <!-- RIGHT COLUMN: STATS AND TELEGRAM GATEWAY -->
             <section class="lg:col-span-7 flex flex-col gap-8">
                 
-                <!-- STARTER PACK SHOWCASE -->
-                <div class="bg-grunge-paper border-4 border-grunge-dark p-6 relative zine-border shadow-2xl">
-                    <div class="absolute -top-5 right-6 bg-grunge-accent text-grunge-dark text-[10px] font-bold px-3 py-1 uppercase tracking-widest border-2 border-grunge-dark rotate-1 shadow-md">MY STUFF</div>
-                    
-                    <div class="border-b-2 border-dashed border-stone-800 pb-4 mb-6">
-                        <h3 class="font-syne text-2xl font-black uppercase text-white tracking-tight">MY STARTER PACK</h3>
-                        <p class="font-typewriter text-xs text-gray-400 mt-1">The things I can't live without.</p>
-                    </div>
-
-                    <!-- 6-PACK GRID LOADOUT (Casual Language) -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        
-                        <!-- CARD 1 -->
-                        <div class="bg-grunge-bg border-2 border-grunge-dark p-5 relative group hover:-translate-y-1 transition-all duration-200">
-                            <div class="w-10 h-10 bg-grunge-dark text-grunge-accent flex items-center justify-center mb-4 border border-grunge-dark">
-                                <i class="fa-solid fa-compact-disc text-lg"></i>
-                            </div>
-                            <span class="block text-[8px] font-mono tracking-widest text-grunge-accent uppercase font-bold mb-1">My Jam</span>
-                            <h4 class="font-syne text-sm font-bold text-white uppercase mb-1">HINDIA PLAYLISTS</h4>
-                            <p class="font-typewriter text-xs text-gray-400 leading-relaxed">"Evaluasi" and "Secukupnya" on repeat. Best background music when I want to be left alone.</p>
-                        </div>
-
-                        <!-- CARD 2 -->
-                        <div class="bg-grunge-bg border-2 border-grunge-dark p-5 relative group hover:-translate-y-1 transition-all duration-200">
-                            <div class="w-10 h-10 bg-grunge-dark text-grunge-accent flex items-center justify-center mb-4 border border-grunge-dark">
-                                <i class="fa-solid fa-scroll text-lg"></i>
-                            </div>
-                            <span class="block text-[8px] font-mono tracking-widest text-grunge-accent uppercase font-bold mb-1">Manga Rule</span>
-                            <h4 class="font-syne text-sm font-bold text-white uppercase mb-1">BORUTO CHRONICLES</h4>
-                            <p class="font-typewriter text-xs text-gray-400 leading-relaxed">Haters can say whatever, but Boruto is absolute peak right now. I read every new chapter immediately.</p>
-                        </div>
-
-                        <!-- CARD 3 -->
-                        <div class="bg-grunge-bg border-2 border-grunge-dark p-5 relative group hover:-translate-y-1 transition-all duration-200">
-                            <div class="w-10 h-10 bg-grunge-dark text-grunge-accent flex items-center justify-center mb-4 border border-grunge-dark">
-                                <i class="fa-solid fa-book-open-reader text-lg"></i>
-                            </div>
-                            <span class="block text-[8px] font-mono tracking-widest text-grunge-accent uppercase font-bold mb-1">Late Night Read</span>
-                            <h4 class="font-syne text-sm font-bold text-white uppercase mb-1">GOD-TIER MANHWA</h4>
-                            <p class="font-typewriter text-xs text-gray-400 leading-relaxed">Solo Leveling, Lookism, and cool action webtoons. I love binge-reading them at 2 AM.</p>
-                        </div>
-
-                        <!-- CARD 4 -->
-                        <div class="bg-grunge-bg border-2 border-grunge-dark p-5 relative group hover:-translate-y-1 transition-all duration-200">
-                            <div class="w-10 h-10 bg-grunge-dark text-grunge-accent flex items-center justify-center mb-4 border border-grunge-dark">
-                                <i class="fa-solid fa-mug-hot text-lg"></i>
-                            </div>
-                            <span class="block text-[8px] font-mono tracking-widest text-grunge-accent uppercase font-bold mb-1">Energy Source</span>
-                            <h4 class="font-syne text-sm font-bold text-white uppercase mb-1">BLACK COFFEE</h4>
-                            <p class="font-typewriter text-xs text-gray-400 leading-relaxed">Dark, strong, and no sugar. It keeps me awake and gives me the energy to get through the day.</p>
-                        </div>
-
-                        <!-- CARD 5 -->
-                        <div class="bg-grunge-bg border-2 border-grunge-dark p-5 relative group hover:-translate-y-1 transition-all duration-200">
-                            <div class="w-10 h-10 bg-grunge-dark text-grunge-accent flex items-center justify-center mb-4 border border-grunge-dark">
-                                <i class="fa-solid fa-headphones text-lg"></i>
-                            </div>
-                            <span class="block text-[8px] font-mono tracking-widest text-grunge-accent uppercase font-bold mb-1">No Talking</span>
-                            <h4 class="font-syne text-sm font-bold text-white uppercase mb-1">WIRED EARPHONES</h4>
-                            <p class="font-typewriter text-xs text-gray-400 leading-relaxed">No Bluetooth for me. Wired earphones are the best way to avoid small talk with people.</p>
-                        </div>
-
-                        <!-- CARD 6 -->
-                        <div class="bg-grunge-bg border-2 border-grunge-dark p-5 relative group hover:-translate-y-1 transition-all duration-200">
-                            <div class="w-10 h-10 bg-grunge-dark text-grunge-accent flex items-center justify-center mb-4 border border-grunge-dark">
-                                <i class="fa-solid fa-crown text-lg"></i>
-                            </div>
-                            <span class="block text-[8px] font-mono tracking-widest text-grunge-accent uppercase font-bold mb-1">My Mindset</span>
-                            <h4 class="font-syne text-sm font-bold text-white uppercase mb-1">MAIN CHARACTER ENERGY</h4>
-                            <p class="font-typewriter text-xs text-gray-400 leading-relaxed">Very confident, but I keep it to myself. I don't need to show off because I know I'm cool.</p>
-                        </div>
-
-                    </div>
-                </div>
-
                 <!-- CASUAL VIBE METERS -->
                 <div class="bg-grunge-paper border-4 border-grunge-dark p-6 transform -rotate-1 relative zine-border shadow-2xl">
-                    <div class="absolute -top-4 left-6 bg-grunge-dark text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest border border-grunge-dark -rotate-2">VIBE METERS</div>
+                    <div class="absolute -top-4 left-6 bg-grunge-dark text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest border border-grunge-dark -rotate-2">METERS</div>
                     
                     <div class="border-b-2 border-dashed border-stone-800 pb-4 mb-4">
-                        <h3 class="font-syne text-xl font-black uppercase text-white tracking-tight">MY ACTUAL VIBES</h3>
+                        <h3 class="font-syne text-xl font-black uppercase text-white tracking-tight">VIBE CHECK</h3>
                         <p class="font-typewriter text-xs text-gray-400 mt-1">Just some stats about me.</p>
                     </div>
 
-                    <!-- Stat Meters (Static Read-Only Bars in Casual English) -->
+                    <!-- Stat Meters -->
                     <div class="space-y-4 font-typewriter">
-                        
-                        <div>
-                            <div class="flex justify-between items-center mb-1 text-xs font-bold text-gray-300">
-                                <span class="flex items-center gap-1.5"><i class="fa-solid fa-skull text-grunge-accent"></i> CONFIDENCE & SELF-LOVE</span>
-                                <span>99%</span>
-                            </div>
-                            <div class="w-full bg-grunge-bg border-2 border-grunge-dark h-5 overflow-hidden">
-                                <div class="bg-grunge-accent h-full border-r-2 border-grunge-dark" style="width: 99%;"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between items-center mb-1 text-xs font-bold text-gray-300">
-                                <span class="flex items-center gap-1.5"><i class="fa-solid fa-battery-quarter text-grunge-accent"></i> SOCIAL BATTERY</span>
-                                <span>15%</span>
-                            </div>
-                            <div class="w-full bg-grunge-bg border-2 border-grunge-dark h-5 overflow-hidden">
-                                <div class="bg-grunge-accent h-full border-r-2 border-grunge-dark" style="width: 15%;"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between items-center mb-1 text-xs font-bold text-gray-300">
-                                <span class="flex items-center gap-1.5"><i class="fa-solid fa-book-open text-grunge-accent"></i> MANHWA & BORUTO ADDICTIONS</span>
-                                <span>94%</span>
-                            </div>
-                            <div class="w-full bg-grunge-bg border-2 border-grunge-dark h-5 overflow-hidden">
-                                <div class="bg-grunge-accent h-full border-r-2 border-grunge-dark" style="width: 94%;"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between items-center mb-1 text-xs font-bold text-gray-300">
-                                <span class="flex items-center gap-1.5"><i class="fa-solid fa-shuffle text-grunge-accent"></i> HINDIA SONGS ON REPEAT</span>
-                                <span>97%</span>
-                            </div>
-                            <div class="w-full bg-grunge-bg border-2 border-grunge-dark h-5 overflow-hidden">
-                                <div class="bg-grunge-accent h-full border-r-2 border-grunge-dark" style="width: 97%;"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between items-center mb-1 text-xs font-bold text-gray-300">
-                                <span class="flex items-center gap-1.5"><i class="fa-solid fa-shirt text-grunge-accent"></i> OVERSIZED BLACK TEE COMFORT</span>
-                                <span>92%</span>
-                            </div>
-                            <div class="w-full bg-grunge-bg border-2 border-grunge-dark h-5 overflow-hidden">
-                                <div class="bg-grunge-accent h-full border-r-2 border-grunge-dark" style="width: 92%;"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between items-center mb-1 text-xs font-bold text-gray-300">
-                                <span class="flex items-center gap-1.5"><i class="fa-solid fa-lock text-grunge-accent"></i> GATEKEEPING (KEEPING IT INDIE)</span>
-                                <span>88%</span>
-                            </div>
-                            <div class="w-full bg-grunge-bg border-2 border-grunge-dark h-5 overflow-hidden">
-                                <div class="bg-grunge-accent h-full border-r-2 border-grunge-dark" style="width: 88%;"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between items-center mb-1 text-xs font-bold text-gray-300">
-                                <span class="flex items-center gap-1.5"><i class="fa-solid fa-flask-vial text-grunge-accent"></i> COFFEE DEPENDENCY</span>
-                                <span>89%</span>
-                            </div>
-                            <div class="w-full bg-grunge-bg border-2 border-grunge-dark h-5 overflow-hidden">
-                                <div class="bg-grunge-accent h-full border-r-2 border-grunge-dark" style="width: 89%;"></div>
-                            </div>
-                        </div>
-
+                        <div><div class="flex justify-between items-center mb-1 text-xs font-bold text-gray-300"><span class="flex items-center gap-1.5"><i class="fa-solid fa-skull text-grunge-accent"></i> CONFIDENCE</span><span>99%</span></div><div class="w-full bg-grunge-bg border-2 border-grunge-dark h-5 overflow-hidden"><div class="bg-grunge-accent h-full border-r-2 border-grunge-dark" style="width: 99%;"></div></div></div>
+                        <div><div class="flex justify-between items-center mb-1 text-xs font-bold text-gray-300"><span class="flex items-center gap-1.5"><i class="fa-solid fa-battery-quarter text-grunge-accent"></i> SOCIAL BATTERY</span><span>11%</span></div><div class="w-full bg-grunge-bg border-2 border-grunge-dark h-5 overflow-hidden"><div class="bg-grunge-accent h-full border-r-2 border-grunge-dark" style="width:11%;"></div></div></div>
+                        <div><div class="flex justify-between items-center mb-1 text-xs font-bold text-gray-300"><span class="flex items-center gap-1.5"><i class="fa-solid fa-book-open text-grunge-accent"></i> MANHWA ADDICTIONS</span><span>65%</span></div><div class="w-full bg-grunge-bg border-2 border-grunge-dark h-5 overflow-hidden"><div class="bg-grunge-accent h-full border-r-2 border-grunge-dark" style="width: 65%;"></div></div></div>
+                        <div><div class="flex justify-between items-center mb-1 text-xs font-bold text-gray-300"><span class="flex items-center gap-1.5"><i class="fa-solid fa-shuffle text-grunge-accent"></i> LIHAT KEBUNKU BY JEJE ON REPEAT</span><span>97%</span></div><div class="w-full bg-grunge-bg border-2 border-grunge-dark h-5 overflow-hidden"><div class="bg-grunge-accent h-full border-r-2 border-grunge-dark" style="width: 97%;"></div></div></div>
+                        <div><div class="flex justify-between items-center mb-1 text-xs font-bold text-gray-300"><span class="flex items-center gap-1.5"><i class="fa-solid fa-shirt text-grunge-accent"></i> OVERSIZED BLACK TEE COMFORT</span><span>92%</span></div><div class="w-full bg-grunge-bg border-2 border-grunge-dark h-5 overflow-hidden"><div class="bg-grunge-accent h-full border-r-2 border-grunge-dark" style="width: 92%;"></div></div></div>
+                        <div><div class="flex justify-between items-center mb-1 text-xs font-bold text-gray-300"><span class="flex items-center gap-1.5"><i class="fa-solid fa-lock text-grunge-accent"></i>LOWKEY INTROVERT</span><span>88%</span></div><div class="w-full bg-grunge-bg border-2 border-grunge-dark h-5 overflow-hidden"><div class="bg-grunge-accent h-full border-r-2 border-grunge-dark" style="width: 88%;"></div></div></div>
+                        <div><div class="flex justify-between items-center mb-1 text-xs font-bold text-gray-300"><span class="flex items-center gap-1.5"><i class="fa-solid fa-flask-vial text-grunge-accent"></i> COFFEE DEPENDENCY</span><span>89%</span></div><div class="w-full bg-grunge-bg border-2 border-grunge-dark h-5 overflow-hidden"><div class="bg-grunge-accent h-full border-r-2 border-grunge-dark" style="width: 89%;"></div></div></div>
                     </div>
                 </div>
 
@@ -430,21 +253,20 @@
                     
                     <div class="border-b-2 border-dashed border-stone-800 pb-4 mb-4">
                         <h3 class="font-syne text-xl font-black uppercase text-white tracking-tight">SAY HI TO ME</h3>
-                        <p class="font-typewriter text-xs text-gray-400 mt-1">Write something here. It will open your Telegram app so you can chat with me directly!</p>
+                        <p class="font-typewriter text-xs text-gray-400 mt-1">Write something here. It will open your Telegram app so you can chat with me directly</p>
                     </div>
 
                     <!-- Interactive Gateway Form -->
                     <div class="space-y-4 font-typewriter">
                         <div>
-                            <label class="block text-gray-400 text-xs font-bold uppercase mb-1">Your Name / Social Handle</label>
+                            <label class="block text-gray-400 text-xs font-bold uppercase mb-1">Your Name</label>
                             <input id="guestName" type="text" placeholder="e.g. Someone Cool" class="w-full bg-grunge-bg border-2 border-grunge-dark p-2.5 text-xs text-white focus:outline-none focus:border-grunge-accent placeholder:text-stone-600 font-bold">
                         </div>
                         <div>
                             <label class="block text-gray-400 text-xs font-bold uppercase mb-1">Your Message</label>
-                            <textarea id="guestMessage" rows="3" placeholder="Tell me your favorite manhwa, a good Hindia song, or just drop a message..." class="w-full bg-grunge-bg border-2 border-grunge-dark p-2.5 text-xs text-white focus:outline-none focus:border-grunge-accent placeholder:text-stone-600 font-bold resize-none"></textarea>
+                            <textarea id="guestMessage" rows="3" placeholder="Just drop a message..." class="w-full bg-grunge-bg border-2 border-grunge-dark p-2.5 text-xs text-white focus:outline-none focus:border-grunge-accent placeholder:text-stone-600 font-bold resize-none"></textarea>
                         </div>
 
-                        <!-- Redirect Trigger Button -->
                         <button onclick="launchTelegramGateway()" class="w-full py-3 bg-grunge-dark text-grunge-accent font-bungee text-xs uppercase tracking-widest hover:bg-grunge-accent hover:text-grunge-dark transition-all zine-border flex items-center justify-center gap-2">
                             <i class="fa-brands fa-telegram text-base"></i> SEND TO MY TELEGRAM
                         </button>
@@ -465,90 +287,50 @@
         </footer>
     </div>
 
-    <!-- AUDIO AND INTERACTIVE STICKERS MASTER SYSTEM -->
+    <!-- AUDIO AND SYSTEM SCRIPTS -->
     <script>
-        // ==========================================
-        // TELEGRAM REDIRECT SETTINGS
-        // ==========================================
-        // Ganti "kennyharris" di bawah ini dengan Username Telegram pribadimu!
-        const TARGET_TELEGRAM_ID = "kennyharris"; 
+        const TARGET_TELEGRAM_ID = "zuigetsuu"; 
 
         function launchTelegramGateway() {
             const nameField = document.getElementById('guestName').value.trim();
             const messageField = document.getElementById('guestMessage').value.trim();
 
             if (!messageField) {
-                // Highlight red if empty
                 const textarea = document.getElementById('guestMessage');
                 textarea.style.borderColor = "#b32424";
-                setTimeout(() => {
-                    textarea.style.borderColor = "#050609";
-                }, 1000);
+                setTimeout(() => { textarea.style.borderColor = "#050609"; }, 1000);
                 return;
             }
 
-            // Constructing a cool raw punk text transmission
             const finalName = nameField ? nameField : "Someone Cool";
             const compiledPayload = `👋 [HI KENNY!] \n\nFrom: ${finalName}\nMessage: "${messageField}"`;
-
-            // Formulating URI encoding safe for Telegram API
             const encodedText = encodeURIComponent(compiledPayload);
-            
-            // 1. Primary link formats
             const tgWebUrl = `https://t.me/${TARGET_TELEGRAM_ID}?text=${encodedText}`;
             const tgAppUrl = `tg://resolve?domain=${TARGET_TELEGRAM_ID}&text=${encodedText}`;
 
-            // 2. Try to launch via multiple pathways (to bypass sandbox limits)
-            try {
-                // Try to trigger the desktop app deep-link directly
-                window.location.href = tgAppUrl;
-            } catch(e) {}
-
-            // Try to open standard web tab as fallback
-            setTimeout(() => {
-                window.open(tgWebUrl, '_blank');
-            }, 100);
-
-            // 3. Show a custom Retro Pop-Up in case popup blockers or sandbox environments block the redirect
+            try { window.location.href = tgAppUrl; } catch(e) {}
+            setTimeout(() => { window.open(tgWebUrl, '_blank'); }, 100);
             showTelegramFallbackModal(TARGET_TELEGRAM_ID, compiledPayload, tgWebUrl, tgAppUrl);
         }
 
-        // Beautiful, robust fallback pop-up system in case browser/iframe blocks popups
         function showTelegramFallbackModal(username, rawText, webUrl, appUrl) {
-            // Remove any existing modal first
             const existing = document.getElementById('tgFallbackModal');
             if (existing) existing.remove();
-
             const modal = document.createElement('div');
             modal.id = 'tgFallbackModal';
             modal.className = 'fixed inset-0 bg-black/90 backdrop-blur-sm flex items-center justify-center z-[9999] p-4';
             modal.innerHTML = `
                 <div class="bg-grunge-paper zine-border p-6 max-w-md w-full text-gray-300 relative transform -rotate-1">
-                    <!-- Duct tape design -->
                     <div class="absolute -top-4 left-1/4 w-32 h-8 duct-tape text-[10px] text-white flex items-center justify-center font-bold uppercase select-none">TRANSMISSION</div>
-                    
                     <h4 class="font-bungee text-lg mt-2 mb-3 text-grunge-accent uppercase">LAUNCHING CHAT...</h4>
                     <p class="font-typewriter text-xs text-gray-400 leading-relaxed mb-4">
-                        If your browser blocked the automatic redirect (common inside coding previews), click one of the manual gateways below to chat with <strong class="text-white">@${username}</strong>:
+                        If your browser blocked the automatic redirect, click one of the gateways below:
                     </p>
-
                     <div class="space-y-2 font-mono">
-                        <!-- Desktop App link -->
-                        <a href="${appUrl}" class="block text-center py-2.5 bg-grunge-dark text-grunge-accent hover:bg-grunge-accent hover:text-grunge-dark border-2 border-grunge-accent text-xs font-bold uppercase transition-all">
-                            ⚡ OPEN IN PC TELEGRAM APP
-                        </a>
-                        <!-- Web link -->
-                        <a href="${webUrl}" target="_blank" class="block text-center py-2.5 bg-grunge-cardboard text-white hover:bg-grunge-accent hover:text-grunge-dark border-2 border-grunge-dark text-xs font-bold uppercase transition-all">
-                            🌐 OPEN IN BROWSER TAB
-                        </a>
-                        <!-- Copy text alternative -->
-                        <button onclick="copyTelegramPayload(this, \`${rawText.replace(/`/g, '\\`').replace(/"/g, '&quot;')}\`)" class="w-full py-2.5 bg-grunge-bg hover:bg-grunge-dark text-gray-400 hover:text-white border-2 border-stone-800 border-dashed text-xs font-bold uppercase transition-all">
-                            📋 COPY DRAFT MESSAGE TO PASTE
-                        </button>
+                        <a href="${appUrl}" class="block text-center py-2.5 bg-grunge-dark text-grunge-accent hover:bg-grunge-accent hover:text-grunge-dark border-2 border-grunge-accent text-xs font-bold uppercase transition-all">⚡ OPEN IN PC TELEGRAM APP</a>
+                        <a href="${webUrl}" target="_blank" class="block text-center py-2.5 bg-grunge-cardboard text-white hover:bg-grunge-accent hover:text-grunge-dark border-2 border-grunge-dark text-xs font-bold uppercase transition-all">🌐 OPEN IN BROWSER TAB</a>
                     </div>
-
-                    <div class="mt-4 pt-4 border-t border-dashed border-stone-800 flex justify-between items-center">
-                        <span class="text-[10px] text-gray-500 uppercase font-bold">CONFIG // CODE SAVED</span>
+                    <div class="mt-4 pt-4 border-t border-dashed border-stone-800 flex justify-end">
                         <button onclick="document.getElementById('tgFallbackModal').remove()" class="text-xs text-grunge-accent hover:underline font-bold uppercase">CLOSE ✕</button>
                     </div>
                 </div>
@@ -556,73 +338,35 @@
             document.body.appendChild(modal);
         }
 
-        // Utility to copy the prefilled text in sandbox environments
-        function copyTelegramPayload(buttonEl, text) {
-            const el = document.createElement('textarea');
-            el.value = text;
-            document.body.appendChild(el);
-            el.select();
-            document.execCommand('copy');
-            document.body.removeChild(el);
-
-            const origText = buttonEl.innerText;
-            buttonEl.innerText = "COPIED TO CLIPBOARD!";
-            buttonEl.className = "w-full py-2.5 bg-grunge-accent text-grunge-dark border-2 border-black text-xs font-bold uppercase transition-all";
-            setTimeout(() => {
-                buttonEl.innerText = origText;
-                buttonEl.className = "w-full py-2.5 bg-grunge-bg hover:bg-grunge-dark text-gray-400 hover:text-white border-2 border-stone-800 border-dashed text-xs font-bold uppercase transition-all";
-            }, 1500);
-        }
-
-        // ==========================================
-        // SYSTEM TIME LOGGER
-        // ==========================================
         function updateZineTime() {
             const d = new Date();
-            const rawString = d.toISOString().replace('T', ' ').substring(0, 19) + ' GMT';
-            document.getElementById('currentTime').innerText = rawString;
+            document.getElementById('currentTime').innerText = d.toISOString().replace('T', ' ').substring(0, 19) + ' GMT';
         }
 
-        // ==========================================
-        // SONG PLAYER (denting.mp3)
-        // ==========================================
         let audioPlayer = null;
         let isSongPlaying = false;
-
         function toggleSong() {
             if (!audioPlayer) {
-                // Initialize the audio player pointing to your local denting.mp3 file
                 audioPlayer = new Audio('denting.mp3');
                 audioPlayer.loop = true;
-                
-                // Log warning silently if local file is missing from folder
-                audioPlayer.addEventListener('error', function(e) {
-                    console.warn("denting.mp3 file not found or could not be loaded yet.", e);
-                });
             }
-
             const btn = document.getElementById('songBtn');
             const text = document.getElementById('songText');
             const icon = document.getElementById('songIcon');
-
             if (!isSongPlaying) {
                 audioPlayer.play().then(() => {
                     isSongPlaying = true;
                     text.innerText = "PLAYING: DENTING";
                     icon.className = "fa-solid fa-compact-disc animate-spin";
                     btn.className = "w-full md:w-auto px-5 py-3 bg-grunge-accent text-grunge-dark text-xs hover:bg-grunge-dark hover:text-grunge-accent transition-all font-bold font-typewriter zine-border flex items-center justify-center gap-2";
-                }).catch(err => {
-                    // Fallback state change visually even if the MP3 file is currently missing or blocked by browser autoplays
-                    console.warn("Playback prevented or file missing: ", err);
+                }).catch(() => {
                     isSongPlaying = true;
                     text.innerText = "PLAYING: DENTING";
                     icon.className = "fa-solid fa-compact-disc animate-spin";
                     btn.className = "w-full md:w-auto px-5 py-3 bg-grunge-accent text-grunge-dark text-xs hover:bg-grunge-dark hover:text-grunge-accent transition-all font-bold font-typewriter zine-border flex items-center justify-center gap-2";
                 });
             } else {
-                if (audioPlayer) {
-                    audioPlayer.pause();
-                }
+                if (audioPlayer) audioPlayer.pause();
                 isSongPlaying = false;
                 text.innerText = "PLAY \"DENTING\" // MP3";
                 icon.className = "fa-solid fa-compact-disc";
@@ -630,134 +374,6 @@
             }
         }
 
-        // ==========================================
-        // DYNAMIC STICKER PLACEMENT MECHANICS
-        // ==========================================
-        let stickerCount = 0;
-
-        // Slaps a user-uploaded custom photo sticker with a sticker border
-        function slapCustomImageSticker(imgUrl) {
-            const board = document.getElementById('stickerBoard');
-            const sticker = document.createElement('div');
-            // Styled like a real custom die-cut vinyl sticker with outline & drop-shadow
-            sticker.className = 'slapped-sticker zine-border bg-white p-1 rounded-sm shadow-xl pointer-events-auto max-w-[120px] max-h-[120px] overflow-hidden flex items-center justify-center';
-            
-            const img = document.createElement('img');
-            img.src = imgUrl;
-            img.className = 'w-full h-auto object-contain max-h-[110px] pointer-events-none select-none';
-            
-            sticker.appendChild(img);
-            randomizeStickerCoords(sticker);
-            makeStickerDraggable(sticker);
-            board.appendChild(sticker);
-
-            incrementStickerCounter();
-        }
-
-        function slapSticker(iconClass, themeClasses) {
-            const board = document.getElementById('stickerBoard');
-            const sticker = document.createElement('div');
-            sticker.className = `slapped-sticker zine-border p-3.5 rounded-full flex items-center justify-center pointer-events-auto shadow-md ${themeClasses}`;
-            sticker.innerHTML = `<i class="${iconClass} text-lg"></i>`;
-
-            randomizeStickerCoords(sticker);
-            makeStickerDraggable(sticker);
-            board.appendChild(sticker);
-
-            incrementStickerCounter();
-        }
-
-        function slapTextSticker(textString, themeClasses) {
-            const board = document.getElementById('stickerBoard');
-            const sticker = document.createElement('div');
-            sticker.className = `slapped-sticker zine-border px-3.5 py-1.5 font-bold text-xs uppercase rotate-12 pointer-events-auto select-none tracking-wider ${themeClasses}`;
-            sticker.innerText = textString;
-
-            randomizeStickerCoords(sticker);
-            makeStickerDraggable(sticker);
-            board.appendChild(sticker);
-
-            incrementStickerCounter();
-        }
-
-        function randomizeStickerCoords(el) {
-            const viewWidth = window.innerWidth;
-            const viewHeight = window.innerHeight;
-
-            const finalX = Math.floor(Math.random() * (viewWidth - 120));
-            // Ensure they spawn slightly lower down than the top headers
-            const finalY = Math.floor(Math.random() * (viewHeight - 240)) + 120;
-            const tilt = Math.floor(Math.random() * 60) - 30; // Tilt range -30 to +30 degrees
-
-            el.style.left = `${finalX}px`;
-            el.style.top = `${finalY}px`;
-            el.style.transform = `rotate(${tilt}deg)`;
-        }
-
-        function makeStickerDraggable(el) {
-            let x1 = 0, y1 = 0, x2 = 0, y2 = 0;
-
-            // Desktop Drag support
-            el.addEventListener('mousedown', dragOnMouseClick);
-            // Mobile Swipe/Touch Drag support
-            el.addEventListener('touchstart', dragOnTouchStart, { passive: false });
-
-            function dragOnMouseClick(e) {
-                e.preventDefault();
-                x2 = e.clientX;
-                y2 = e.clientY;
-                document.onmouseup = stopDragProcess;
-                document.onmousemove = dragElementsAround;
-            }
-
-            function dragOnTouchStart(e) {
-                const touchPoint = e.touches[0];
-                x2 = touchPoint.clientX;
-                y2 = touchPoint.clientY;
-
-                function touchMoveCoordinates(moveEvent) {
-                    const activeTouch = moveEvent.touches[0];
-                    x1 = x2 - activeTouch.clientX;
-                    y1 = y2 - activeTouch.clientY;
-                    x2 = activeTouch.clientX;
-                    y2 = activeTouch.clientY;
-
-                    el.style.top = `${el.offsetTop - y1}px`;
-                    el.style.left = `${el.offsetLeft - x1}px`;
-                }
-
-                function touchDragEnd() {
-                    el.removeEventListener('touchmove', touchMoveCoordinates);
-                    el.removeEventListener('touchend', touchDragEnd);
-                }
-
-                el.addEventListener('touchmove', touchMoveCoordinates, { passive: true });
-                el.addEventListener('touchend', touchDragEnd);
-            }
-
-            function dragElementsAround(e) {
-                e = e || window.event;
-                e.preventDefault();
-                x1 = x2 - e.clientX;
-                y1 = y2 - e.clientY;
-                x2 = e.clientX;
-                y2 = e.clientY;
-
-                el.style.top = `${el.offsetTop - y1}px`;
-                el.style.left = `${el.offsetLeft - x1}px`;
-            }
-
-            function stopDragProcess() {
-                document.onmouseup = null;
-                document.onmousemove = null;
-            }
-        }
-
-        function incrementStickerCounter() {
-            stickerCount++;
-        }
-
-        // Initialize clock intervals
         window.onload = function() {
             setInterval(updateZineTime, 1000);
             updateZineTime();
